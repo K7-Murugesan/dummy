@@ -82,9 +82,115 @@ let digit = 100; // 500
 // digit *= 50; // multiply and assign // 500
 // digit /= 50; // divide and assign  // 500/50
 // digit %= 50; // modulus and assign  // 0
-digit **= 2; // exponential and assign  // 0
+// digit **= 2; // exponential and assign  // 0
 
-// digit++
+// // digit++
 
-console.log( digit );
+// console.log( digit );
 
+// Comparision Operator
+
+let num1 = 30;
+let num2 = 30;
+
+// console.log( num2 > num1  ); // Greater Than
+// console.log( num2 < num1 ); // Less than
+// console.log( num1>=num2 );// Greter than or Equal to
+// console.log( num1<=num2 );// Less than or Equal to
+
+// console.log( num1 == num2  ); // Equal To
+
+// console.log( num1 === num2 ); // Strict Equal
+
+// console.log( num1 != num2 ); //Not Equal
+
+// console.log( num1 !== num2  );//Strict Not Equal
+
+
+// Logical Operator
+
+// Logical AND ( && )
+
+// let age = 17; // 18 - 30
+
+// console.log(  age >= 18  && age <= 30 );
+//            18 > 18 && 18 < 30 ==> false && true // Short Circuit Evaluation
+//            19 > 18 && 19 < 30 ==> true && true
+//            30 > 18 && 30 < 30 ==> true && false
+//            30 >= 18 && 30 <= 30 ==> true && true
+
+// Logical OR ( ||  )
+
+let idProof = "pan";
+// let idProof1 = "license"
+
+// console.log(  idProof1 == "license" || idProof == "voterID"  );
+// console.log(  idProof == "license" || idProof == "voterID"  );
+//            licence == licence || licence == voterID // true || false ==> true
+//            voterID == licence || voterID == voterID // false || true ==> true
+//            license == licence || voterID == voterID // true || true ==> true
+//            pan == licence || pan == voterID // false || false ==> false
+
+// Logical NOT ( ! )
+// console.log(  !(10 == 10) );
+
+// Concatination
+
+// let str = "Javascript"
+// let str1 = "is a"
+// let str2 = "Scripting Language"
+
+// let newStr = str + " " + str1 + " " +  str2
+
+// console.log( str +" " + "is a scripting Language" );
+
+
+// Type Conversion
+
+// Implicit Type Conversion or type coercion
+
+// let num = 10;
+// let chars = "hii"
+// console.log( 10 + "10"  ); // number + string
+// console.log( typeof (10 + "10" ) ); 
+// console.log( chars + true  );
+// console.log( chars + undefined  );
+// console.log( chars + null  );
+
+// console.log( num + true  ); // true - 1
+// console.log( num + false  ); // false - 0
+// console.log( false + false  ); 
+// console.log( true + true  ); 
+// console.log( Number( undefined )  );
+// console.log( typeof (num + undefined) ); // NaN - Not a Number
+// console.log( num + undefined );
+// console.log(  num + null );  // number + null = number
+
+// console.log( true + "abc" );
+// console.log( true + 1 );
+// console.log( true + undefined );
+// console.log( true + null ); // 1 + 0
+
+
+// console.log( 10 == "10"  );
+
+// anything +  string  = string
+// string + anything   = string
+
+
+// Explicit Type Conversion
+
+// console.log(  Number( null ) );
+// console.log(  String( null ) );
+// console.log( Boolean( "" )  );
+// console.log( Boolean( "1" )  );
+// console.log( Boolean( "abc" )  );
+// console.log( Boolean( -10 )  );
+// console.log( Boolean( undefined ) );
+// console.log( Boolean( null ) );
+
+// Undeclared Variable vs undefined
+
+let a;
+
+console.log(  a  ); // undeclared variable

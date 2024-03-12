@@ -98,7 +98,50 @@ let obj2 = { newVal : "Ml" }
 
 let user1 = "DataTypes Completed"
 
-console.log( user1 );
+// console.log( user1 );
+
+// let arr = [10,20,30,40]
+
+// let newArr = arr.reduce( (acc,val,ind,arr)=>{
+//   return( acc.concat(val) );
+// }, []  )
+
+// console.log( newArr );
 
 
+// let currentInput = "1100111100";
+// let target = "1"
 
+function longestCons(currentInput,target){
+   
+  let currentCount=0;
+  let maxCount = 0;
+  let startIndex = 0;
+  
+  for ( let i =0; i<currentInput.length; i++  ){
+      if( currentInput[i] == target  ){
+          if( currentCount ==0 ){
+              startIndex = i
+          }
+          currentCount++;
+      }
+      else {
+          currentCount =0
+      }
+      // maxCount = Math.max(currentCount , maxCount )
+      if(currentCount>maxCount){
+          maxCount = currentCount
+      }
+  }
+  
+  let lastIndex = startIndex + maxCount -1;
+  
+  return {maxCount, startIndex, lastIndex };
+  
+  }
+  
+  let newVal = longestCons( "111000000000011100000000", "0"  )
+  
+  console.log(newVal.maxCount, newVal.startIndex, newVal.lastIndex )
+
+  

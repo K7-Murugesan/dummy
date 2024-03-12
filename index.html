@@ -8,10 +8,23 @@
 </head>
 <body>
     <h1> Javascript Introduction </h1>
-    <p>Client Side</p>
+    <div  id="body">
+        <p id="para">Client Side</p>
+    </div>
     <script  src="./index.js" >
         
     </script>
+    <script>
+        document.getElementById("para").addEventListener('click', function(e){
+            console.log( "Child Executed" )
+        })
+
+        document.getElementById("body").addEventListener('click', function() {
+           console.log( "Parent Executed" )
+        },false)
+
+    </script>
+
     <!-- <script>
         let b = 10;
         console.log( b )
